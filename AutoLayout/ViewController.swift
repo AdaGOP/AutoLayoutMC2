@@ -9,8 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     var imagePicker: ALImagePicker!
+    var image: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,20 +19,23 @@ class ViewController: UIViewController {
         self.imagePicker = ALImagePicker(presentationController: self, delegate: self)
         
     }
-
+    
     @IBAction func uploadDidTap(_ sender: UIButton) {
         self.imagePicker.present(from: sender)
     }
     
     @IBAction func shareDidTap(_ sender: UIButton) {
-           
+        guard let image = UIImage(named: "image_dummy") else { return }
+        let activityView = UIActivityViewController(activityItems: [image ,"For your ovely family!! 😎"], applicationActivities: nil)
+        activityView.setValue("Work From Home", forKey: "subject")
+        present(activityView, animated: true)
     }
-       
+    
 }
 
 extension ViewController: ALImagePickerDelegate {
     func didSelect(image: UIImage?) {
-        
+        self.image = image
     }
 }
 
