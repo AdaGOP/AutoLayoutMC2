@@ -60,10 +60,9 @@
 		4E27C9B224644EB700C73308 /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				558EDAA1246938E500BA7D39 /* Service */,
 				4E27C9B324644EB700C73308 /* AppDelegate.swift */,
 				4E27C9B524644EB700C73308 /* SceneDelegate.swift */,
-				558EDA9F2469343800BA7D39 /* ALActivityView.swift */,
-				55471A1E24692B5900365FF8 /* ALImagePicker.swift */,
 				4E27C9B724644EB700C73308 /* ViewController.swift */,
 				4E27C9B924644EB700C73308 /* Main.storyboard */,
 				4E27C9BC24644EBA00C73308 /* Assets.xcassets */,
@@ -71,6 +70,15 @@
 				4E27C9C124644EBA00C73308 /* Info.plist */,
 			);
 			path = AutoLayout;
+			sourceTree = "<group>";
+		};
+		558EDAA1246938E500BA7D39 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				558EDA9F2469343800BA7D39 /* ALActivityView.swift */,
+				55471A1E24692B5900365FF8 /* ALImagePicker.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
